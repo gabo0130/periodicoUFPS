@@ -6,9 +6,10 @@ function llenarPecera(){
     console.log("aqui");
     
     var elem = document.querySelector('#feedPricipal');
-    elem.innerHTML=elem.innerHTML+diseñoRamdom();
+    elem.innerHTML=diseñoRamdom()+elem.innerHTML;
     var msnry = new Masonry( elem, { 
     });
+    msnry.layout();
 }
 
 /*
@@ -20,6 +21,21 @@ function vaciarPecera(){
     //const div = document.createElement("div");
     document.getElementById("feedNoticias").innerHTML="<div class='row' id='feedPricipal' data-masonry='{&quot;percentPosition&quot;: true }' style='position: relative; '></div>";
 }
+
+/*
+function que llenara el feed principal de noticias 
+*/
+function llenarPeceraDos(){
+    document.getElementById("feedSugerencias").innerHTML=document.getElementById("feedSugerencias").innerHTML+'<div class="card" style="margin-bottom: 1.5em;"><div class="card-body"><h5 class="card-title">Noticia sin imagen</h5><strong class="d-inline-block mb-2 text-warning">Actualidad</strong><p class="card-text">Noticia sin imagen que si cae aca es porque no tiene imagen xd</p><p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></div></div>';
+}
+
+/*
+function que limpiara el feed principal de noticias 
+*/
+function vaciarPeceraDos(){
+    document.getElementById("feedSugerencias").innerHTML="";
+    }
+
 
 /*
 function que retorna un diseño cualquiera de noticia  
