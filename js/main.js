@@ -50,11 +50,33 @@ function diseñoRamdom(){
 
 function imagenRandom(){
 
-    const imagenes= new Array("../data/J_1.jpg","../data/petro.jpg","../data/news.jpg");
-    return imagenes[Math.floor(Math.random() * 3)];
+    const imagenes= new Array("../data/J_1.jpg","../data/petro.jpg","../data/news.jpg","../data/aula.jpg","../data/presentacio.jpg");
+    return imagenes[Math.floor(Math.random() * 5)];
 }
 
 function tituloRandom(){
 
-    const titulo = new Array("",",","");
+    const titulo = new Array("UFPS realizó evaluación en competencias genéricas a estudiantes de pregrado",
+    "UFPS da inicio a la IX Semana Internacional de Ciencia, Tecnología e Innovación",
+    "Consultorio Jurídico UFPS firma convenio con la Fiscalía General");
+
+    return titulo[Math.floor(Math.random() * 3)]
+
+}
+
+function categoriaRandom(){
+
+    const categoria = new Array("politica","tecnologia","deportes","ciencia","economia","arte","educacion")
+
+    return categoria[Math.floor(Math.random() * 7)]
+}
+
+function descripcionRandom(){
+
+    const descripcion = new Array("La Universidad Francisco de Paula Santander a través de la Vicerrectoría Asistente de Estudios y dando cumplimiento a la Resolución 270 de 2022, realizó la primera Prueba de Seguimiento en Competencias Genéricas a 3112 estudiantes de 3°, 5° y 7° semestre de los programas académicos de pregrado modalidad presencial y a distancia.",
+    "La IX Semana Internacional de Ciencia, Tecnología e Innovación que se desarrolla del 29 noviembre al 2 de diciembre de 2022, tiene como propósito la presentación de los avances en investigación y extensión de la Universidad Francisco de Paula Santander Cúcuta y seccional Ocaña, a través de los Grupos y Semilleros de investigación, además del intercambio de experiencias con investigadores del ámbito nacional e internacional.",
+    "La Universidad Francisco de Paula Santander firmó convenio de cooperación interinstitucional con la Fiscalía General de la Nación, con el fin de facultar el Consultorio Jurídico UFPS en la implementación y funcionamiento de la Justicia Restaurativa en procesos penales y materializar el programa de Mediación Penal.",
+    "El Gobernador del Departamento y presidente del Consejo Superior Universitario, Silvano Serrano Guerrero, formalizó la",);
+
+    return categoria[Math.floor(Math.random() * 4)]
 }
