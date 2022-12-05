@@ -47,3 +47,14 @@ function diseñoRamdom(){
    );
    return diseño[Math.floor(Math.random() * 2)];
 }
+
+function imagenRandom(){
+
+    const imagenes= new Array("../data/J_1.jpg","../data/petro.jpg","../data/news.jpg");
+    return imagenes[Math.floor(Math.random() * 3)];
+}
+
+function tituloRandom(){
+
+    const titulo = new Array("",",","");
+}
