@@ -1,0 +1,34 @@
+[
+   {
+      "id": 21,
+      "noticia": {
+         "id": 6,
+         "titulo": "Fronteras vivas y comunicación digital: ejes centrales de Ápira 2022",
+         "contenido": "Con una agenda temática que contó con la participación de ponentes nacionales e internacionales, el programa de Comunicación Social de la Universidad Francisco de Paula Santander realizó el II Congreso Ápira, bajo el eje central de “fronteras vivas”.\r\n\r\nEl evento académico sirvió como espacio de conocimiento, historia y transformación de la comunicación. Asimismo, para hacer un análisis del contexto actual fronterizo, viendo la reapertura de la frontera con Venezuela, como una nueva oportunidad para la región.   \r\n\r\n“Cúcuta es una ciudad que acoge todo este flujo migratorio y nos ha llevado a tener interacciones culturales, sociales y académicas, permitiendo reinventarnos y que nos veamos de una manera distinta en el contexto de frontera. Entonces desde la comunicación, analizamos todos estos fenómenos socioculturales comunicativos y cómo han permitido que a nivel social y cultural nos encontremos migrantes venezolanos, colombianos y terminemos siendo una sola frontera”, explicó Margarita Rosa Peñaloza Durán, Coordinadora del programa de Comunicación Social.\r\n\r\nAsimismo, agregó que el Congreso tuvo conferencias centrales magistrales donde se abordaron temas como la comunicación con los jóvenes, comunicación transmedia, la comunicación en el campo digital y experiencias de cubrimientos periodísticos en zona de frontera. Adicional a esto, los estudiantes disfrutaron de talleres de doblaje de voz y comunicación transmedia. Los graduados del programa también tuvieron su espacio con el encuentro de egresados, donde conocieron los avances y logros que ha tenido el Programa durante sus quince años de fundación.\r\n\r\nEntre tanto, Jaime Silva, director de señal memoria y ponente de Ápira, dijo que señal memoria, es el archivo audiovisual más importante que tiene Colombia y uno de los más relevantes de América Latina. “Contamos con todo el archivo de los medios de comunicación públicos desde 1940 hasta la actualidad, reposan en nuestras bóvedas más de quinientos mil documentos audiovisuales y sonoros que son la historia viva de Colombia, la memoria todos los colombianos.\r\n\r\nComo actividad de cierre del Congreso y una de las más importantes, los estudiantes de los diferentes semestres del programa realizaron una presentación de sus diferentes proyectos de aula a toda la comunidad universitaria.",
+         "id_usuario": 2,
+         "estado": "aprobado",
+         "url_imagen": "https://ww2.ufps.edu.co/public/imagenes/noticia/b1515c1cfc4f61ce61ed5e98bcc996d1.jpg"
+      },
+      "categoria": {
+         "id_categoria": 1,
+         "nombre": "Tecnología"
+      },
+      "ref": 89
+   },
+   {
+      "id": 28,
+      "noticia": {
+         "id": 7,
+         "titulo": "UFPS presentó 28 proyectos investigativos en el XXV Encuentro Nacional de Semilleros RedCOLSI",
+         "contenido": "18 semilleros de investigación de las seis Facultades de la Universidad Francisco de Paula Santander, participaron del XXV Encuentro Nacional y XIX Encuentro Internacional de Semilleros, organizado por la Red Colombiana, RedCOLSI, y llevado a cabo en la ciudad de Medellín.\r\n\r\nAndrea Cacique, coordinadora de Grupos y Semilleros de Investigación, manifestó que de la UFPS se presentaron 28 proyectos y un total de 30 estudiantes quienes acompañaron este evento que tuvo como propósito socializar los avances en investigación, innovación y desarrollo tecnológico de las diferentes temáticas de RedCOLSI.\r\n\r\nLos proyectos participantes, y que son liderados por estudiantes de semilleros de investigación institucional, fueron aquellos que obtuvieron un puntaje igual o superior a 90 puntos en los pasados encuentros departamentales realizados en los nodos de Norte de Santander.\r\n\r\n“Estos encuentros facilitan la creación de escenarios académicos para reconocer el valor y la trascendencia de la investigación formativa ejecutada por los semilleros de investigación y por las instituciones nacionales e internacionales participantes”, afirmó Andrea Cacique.\r\n\r\nJamer Castellanos Fuentes, estudiante UFPS, manifestó que esta experiencia enriquece su proceso académico porque permite mostrar el conocimiento mediante los procesos de investigación, “lo considero como una muy buena oportunidad que nos da la universidad para transmitir todo el proceso investigativo que desarrollamos”.\r\n\r\nFinalmente, la Coordinadora de Grupos y Semilleros de Investigación institucional, expresó que esta participación refleja el interés que tiene la UFPS por incentivar la ruta de formación en investigación con el propósito de fortalecer en los estudiantes las competencias investigativas brindando así mayores oportunidades en el contexto nacional e internacional.",
+         "id_usuario": 1,
+         "estado": "aprobado",
+         "url_imagen": "https://ww2.ufps.edu.co/public/imagenes/noticia/cb7741084c3f11955bc8bc6d79e6a7dd.jpg"
+      },
+      "categoria": {
+         "id_categoria": 1,
+         "nombre": "Tecnología"
+      },
+      "ref": 12
+   }
+]
