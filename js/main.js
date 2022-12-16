@@ -2,8 +2,8 @@
 /*
 function que llenara el feed principal de noticias 
 */
-function obtenernoticias(){
-    fetch('../data/noticias.json')
+function obtenernoticias(ruta){
+    fetch(ruta)
     .then(res => res.json()) // el método .json() analiza la respuesta JSON en un objeto literal JS
     .then(data =>llenarPecera(data))
 }
@@ -13,7 +13,7 @@ function llenarPecera(data){
     vaciarPecera();
         var elem = document.querySelector('#feedPricipal');
     for (var i = 3; i <data.length-3; i++) {
-        elem.innerHTML='<div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;"><div class="card" ><img src="'+data[i].url_imagen+'" class="card-img-top" alt="..."><div class="card-body"><h3 class="mb-0">'+split(data[i].titulo)+'</h3><div class="mb-1 text-muted">Dec 23</div><p class="card-text mb-auto">'+data[i].titulo+'</p><a href="#" class="stretched-link">Continue reading</a></div></div></div>'+elem.innerHTML;
+        elem.innerHTML='<div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;"><div class="card" ><img src="'+data[i].noticia.url_imagen+'" class="card-img-top" alt="..."><div class="card-body"><h3 class="mb-0">'+split(data[i].noticia.titulo)+'</h3><div class="mb-1 text-muted">Dec 23</div><p class="card-text mb-auto">'+data[i].noticia.titulo+'</p><a href="#" class="stretched-link">Continue reading</a></div></div></div>'+elem.innerHTML;
     }
     
     llenarPeceraDos(data);
@@ -43,7 +43,7 @@ function llenarPeceraDos(data){
     vaciarPeceraDos();
     var elem = document.querySelector('#feedSugerencias');
     for (var i = 0; i <3; i++) {
-        elem.innerHTML='<div class="card" style="margin-bottom: 1.5em;"><div class="card-body"><h5 class="card-title">'+split(data[i].titulo)+'</h5><p class="card-text">'+data[i].titulo+'</p><p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p><a href="#" class="stretched-link">Continue reading</a></div></div>'+elem.innerHTML;
+        elem.innerHTML='<div class="card" style="margin-bottom: 1.5em;"><div class="card-body"><h5 class="card-title">'+split(data[i].noticia.titulo)+'</h5><p class="card-text">'+data[i].noticia.titulo+'</p><p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p><a href="#" class="stretched-link">Continue reading</a></div></div>'+elem.innerHTML;
     }
     
 }
