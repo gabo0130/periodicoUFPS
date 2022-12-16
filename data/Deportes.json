@@ -1,13 +1,13 @@
 [
    {
-      "id": 1,
+      "id": 10,
       "noticia": {
-         "id": 1,
-         "titulo": "Fue a la panaderia por pan y le dieron pan pan",
-         "contenido": "No aguantó dos tiros en la frente",
+         "id": 3,
+         "titulo": "En esto quedará el salario mínimo en Colombia para el 2023",
+         "contenido": "El salario mínimo pasará de 1.000.000 pesos colombianos (US$ 209 al tipo de cambio actual) a 1.160.000 (US$ 242), un aumento del 16%.",
          "id_usuario": 1,
          "estado": "aprobado",
-         "url_imagen": "https://www.cocinatis.com/media/photologue/photos/cache/CTIS0314-Como-hacer-pan-casero-principal_desktop_horizontal_full_width.jpg"
+         "url_imagen": "https://cnnespanol.cnn.com/wp-content/uploads/2022/12/colombia-salario-minimo-2023-e1671137454338.jpg?quality=100&strip=info&w=780&h=438&crop=1"
       },
       "categoria": {
          "id_categoria": 2,
@@ -16,14 +16,14 @@
       "ref": 21
    },
    {
-      "id": 19,
+      "id": 12,
       "noticia": {
-         "id": 3,
-         "titulo": "lorem ipsum",
-         "contenido": "lorem ipsum de toda la vida",
+         "id": 4,
+         "titulo": "Gobierno de Colombia y grupo guerrillero ELN llegan a acuerdo sobre retorno de comunidades indígenas desplazadas",
+         "contenido": "El presidente de Colombia, Gustavo Petro, anunció que la delegación del Gobierno y representantes del grupo guerrillero Ejército de Liberación Nacional (ELN), firmaron un acuerdo preliminar para promover el retorno de las comunidades indígenas desplazadas internas a sus territorios como parte de las negociaciones de paz que se llevan a cabo en Caracas, Venezuela.",
          "id_usuario": 3,
          "estado": "aprobado",
-         "url_imagen": "https://ihdemu.com/images/blog/que-es-lorem-ipsum.jpg"
+         "url_imagen": "https://cnnespanol.cnn.com/wp-content/uploads/2022/08/220821201443-eln-colombia-full-169.jpg?quality=100&strip=info&w=300&h=170&crop=1"
       },
       "categoria": {
          "id_categoria": 2,
@@ -79,11 +79,11 @@
       "ref": 23
    },
    {
-      "id": 47,
+      "id": 11,
       "noticia": {
-         "id": 21,
-         "titulo": "'Cristiano Ronaldo amenazó con irse de Portugal': la noticia que estremece Qatar",
-         "contenido": "Cristiano Ronaldo, en su quinto Mundial, entre su destino futuro aún por concretar de forma definitiva después de forzar su salida del Manchester United con unas declaraciones antes del Mundial, su gesto a Fernando Santos al final de la derrota por 2-1 contra Corea del Sur y la noticia publicada este jueves por 'Récord' de que amenazó con abandonar el torneo cuando conoció su suplencia ante Suiza, negada por la Federación Portuguesa de Fútbol, lo domina un estado de turbulencia, a dos días de enfrentarse a Marruecos en los cuartos de final, con la duda de si recuperará o no la titularidad.\r\n\r\nNo hay pausa en el debate que pone al astro luso, al futbolista con más partidos (195) y más goles (118) con la selección, en el centro de todo en Portugal, desde el principio hasta ahora, desde que su equipo aterrizó en Catar, entre cómo influirían todas sus declaraciones sobre el Manchester United, en la relación con sus compañeros como Bruno Fernandes (incluso, entonces, Cristiano compareció de forma sorpresiva ante la prensa); cómo es su liderazgo en el conjunto luso, cómo se tomó que no le dieran el gol ante Uruguay, su reacción con el entrenador tras el 2-1 ante Corea del Sur, su relevo al banquillo en unos octavos de final del Mundial... Y, ahora, su reacción a una suplencia inesperada.\r\n\r\n\"Una noticia publicada el jueves dice que Cristiano Ronaldo amenazó con abandonar el equipo nacional durante una conversación con Fernando Santos, seleccionador nacional. La FPF (Federación Portuguesa de Fútbol) aclara que en ningún momento el capitán de la selección, Cristiano Ronaldo, amenazó con abandonar la selección durante la concentración en Catar\", salió el paso el organismo en su web oficial, cuando asoman los cuartos de final.\r\n\r\nEl comunicado surgió después de la información publicada por 'Récord', que afirmó que Cristiano Ronaldo \"amenazó con irse\" de la concentración del Mundial 2022 en \"una acalorada conversación con Fernando Santos\", el seleccionador nacional, aunque luego el capitán \"se calmó, reflexionó y cambió de opinión\".\r\n\r\nTambién asegura que el \"grupo\" se quedó \"al margen\" de tal situación, según refleja el diario.\r\n\r\nLa defensa de la FPF fue más allá en sus cinco párrafos publicados a mediodía desde su concentración de Al Shahaniya, al oeste de Doha.\r\n\r\n\"Cristiano Ronaldo construye cada día una trayectoria única al servicio de la selección y del país que tiene que ser respetada y que da fe del incuestionable compromiso con la selección. De hecho, el grado de entrega del jugador más veces internacional con Portugal fue demostrado de nuevo, si es necesario hacerlo, en la victoria frente a Suiza en los octavos de final del Mundial 2022\", remarcó la nota, horas antes de que el equipo se entrene con la vista en Marruecos.",
+         "id": 5,
+         "titulo": "Estos son los días festivos y puentes en Colombia para 2023",
+         "contenido": "Los días festivos oficiales en Colombia están marcados por ley 'Emiliani' o ley 51 de 1983 como no laborales.",
          "id_usuario": 4,
          "estado": "aprobado",
          "url_imagen": "https://www.eltiempo.com/files/article_content_new/uploads/2022/12/07/6390ab5d18d73.jpeg"
