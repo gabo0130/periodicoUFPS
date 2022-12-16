@@ -13,7 +13,10 @@ function llenarPecera(data){
     vaciarPecera();
         var elem = document.querySelector('#feedPricipal');
     for (var i = 3; i <data.length-3; i++) {
-        elem.innerHTML='<div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;"><div class="card" ><img src="'+data[i].noticia.url_imagen+'" class="card-img-top" alt="..."><div class="card-body"><strong class="d-inline-block mb-2 '+data[i].categoria.nombre+'">'+data[i].categoria.nombre+'</strong><h3 class="mb-0">'+split(data[i].noticia.titulo)+'</h3><div class="mb-1 text-muted">Dec 23</div><p class="card-text mb-auto">'+data[i].noticia.titulo+'</p><a href="#" class="stretched-link">Continue reading</a></div></div></div>'+elem.innerHTML;
+        elem.innerHTML='<div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;"><div class="card" ><img src="'+data[i].noticia.url_imagen+'" class="card-img-top" alt="..."><div class="card-body"><strong class="d-inline-block mb-2 '+
+        data[i].categoria.nombre+'">'+data[i].categoria.nombre+'</strong><h3 class="mb-0">'+
+        split(data[i].noticia.titulo)+'</h3><div class="mb-1 text-muted">Dec 23</div><p class="card-text mb-auto">'+
+        data[i].noticia.titulo+'</p><a href="javascript:cargarNoticia('+data[i].id+')" class="stretched-link">Continue reading</a></div></div></div>'+elem.innerHTML;
     }
     
     llenarPeceraDos(data);
@@ -43,7 +46,7 @@ function llenarPeceraDos(data){
     vaciarPeceraDos();
     var elem = document.querySelector('#feedSugerencias');
     for (var i = 0; i <3; i++) {
-        elem.innerHTML='<div class="card" style="margin-bottom: 1.5em;"><div class="card-body"><strong class="d-inline-block mb-2 '+data[i].categoria.nombre+'">'+data[i].categoria.nombre+'</strong><h5 class="card-title">'+split(data[i].noticia.titulo)+'</h5><p class="card-text">'+data[i].noticia.titulo+'</p><p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p><a href="#" class="stretched-link">Continue reading</a></div></div>'+elem.innerHTML;
+        elem.innerHTML='<div class="card" style="margin-bottom: 1.5em;"><div class="card-body"><strong class="d-inline-block mb-2 '+data[i].categoria.nombre+'">'+data[i].categoria.nombre+'</strong><h5 class="card-title">'+split(data[i].noticia.titulo)+'</h5><p class="card-text">'+data[i].noticia.titulo+'</p><p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p><a href="javascript:cargarNoticia('+data[i].id+')" class="stretched-link">Continue reading</a></div></div>'+elem.innerHTML;
     }
     
 }
@@ -98,4 +101,27 @@ function descripcionRandom(){
     "El Gobernador del Departamento y presidente del Consejo Superior Universitario, Silvano Serrano Guerrero, formalizó la",);
 
     return categoria[Math.floor(Math.random() * 4)]
+}
+
+function cargarNoticia(it){
+    console.log(it);
+    fetch('../data/noticias.json')
+    .then(res => res.json()) // el método .json() analiza la respuesta JSON en un objeto literal JS
+    .then(data =>cargarNoticiaFeed(data,it))
+    }
+
+function cargarNoticiaFeed(data,it){
+        var elem = document.querySelector('#feedPricipal');
+        for (var i = 0; i <data.length; i++) {
+        if(it==i){
+            console.log("encontro"+it)
+            elem.innerHTML='<div class="col-md-12"><div class="text-center"><img src="'+
+            data[i].noticia.url_imagen+'" class="img-fluid" alt="..."></div><article class="blog-post"><h2 class="blog-post-title mb-2">'+
+            data[i].noticia.titulo+'</h2><p class="blog-post-meta">December 2, 2022 by <a href="#">Jhony</a></p><p class="text-xl-start">'+
+            data[i].noticia.contenido+'</p></article></div>';
+            var msnry = new Masonry( elem, { 
+            });
+            msnry.layout();
+        }
+        }
 }
