@@ -113,7 +113,8 @@ function cargarNoticia(it){
 function cargarNoticiaFeed(data,it){
         var elem = document.querySelector('#feedPricipal');
         for (var i = 0; i <data.length; i++) {
-        if(it==i){
+            console.log(i+" "+data[i].id);
+        if(it==data[i].id){
             console.log("encontro"+it)
             elem.innerHTML='<div class="col-md-12"><div class="text-center"><img src="'+
             data[i].noticia.url_imagen+'" class="img-fluid" alt="..."></div><article class="blog-post"><h2 class="blog-post-title mb-2">'+
