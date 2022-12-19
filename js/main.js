@@ -1,13 +1,53 @@
 
-/*
-function que llenara el feed principal de noticias 
-*/
+function cargadoInicial(){
+    const url = "http://localhost:8088/categoria/listar";
+    fetch(url)
+    .then(res => res.json()) // el método .json() analiza la respuesta JSON en un objeto literal JS
+    .then(data =>function(){
+        console.log("entrooooo");
+        var elem = document.querySelector('#navCategoria');
+        for (var i = 0; i <data.length; i++) {
+        elem.innerHTML='<a class="text-reset p-2" href="javascript:obtenernoticias("localhost:8088/categoria/'+data[i].id+'/noticias");">'+datadata[i].nombre+'</a>'+elem.innerHTML;
+        }
+    })
+    
+}
+function postNoticia(){
+    var url = 'http://localhost:8088/noticias/postNoticia';
+    var data = {
+        id: "",
+        titulo: document.getElementById("idTituloNoticia").value,
+        contenido: document.getElementById("idcontenidoNoticia").value,
+        id_usuario: 1,
+        estado: "espera",
+        url_imagen: document.getElementById("idImagen").value
+    };
+    post(url,data);
+    document.getElementById("miForm").reset();
+}
+
+
+function post(url,data){
+
+    fetch(url, {
+        method: 'POST', // or 'PUT'
+        body: JSON.stringify(data), // data can be `string` or {object}!
+        headers:{
+          'Content-Type': 'application/json'
+        }
+      }).then(res => res.json())
+      .catch(error => console.error('Error:', error))
+      .then(response => console.log('Success:', response));
+}
+
 function obtenernoticias(ruta){
     fetch(ruta)
     .then(res => res.json()) // el método .json() analiza la respuesta JSON en un objeto literal JS
     .then(data =>llenarPecera(data))
 }
-
+/*
+function que llenara el feed principal de noticias 
+*/
 function llenarPecera(data){
     console.log("aqui");
     vaciarPecera();
